@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Figure Skating: A Data Breakdown</title>
+	<meta name="description" content="Figure Skating: A Data Breakdown" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="styles-scrolly.css" />
+	<style>
+		#scrolly {
+			position: relative;
+			/*background-color: goldenrod;*/
+			padding: 1rem;
+		}
+
+		article {
+			position: relative;
+			padding: 0;
+			max-width: 100%;
+			margin: 0 auto;
+		}
+
+        
+		figure {
+			position: -webkit-sticky;
+			position: sticky;
+			left: 0;
+			width: 100%;
+            /*height: ;*/
+			margin: 0;
+			-webkit-transform: translate3d(0, 0, 0);
+			-moz-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+			/*background-color: #8a8a8a;*/
+			z-index: 0;
+		}
+
+		figure img {
+            
+            padding-top:0%;
+            height:100%;
+            margin-left:9%;    
+			width:85%;
+		}
+
+		.step {
+			margin: 0 auto 2rem auto;
+			color: #fff;
+            /*background-color:yellow;*/
+            max-height:400px;
+			/*background-color: rgba(0, 0, 0, 0.1);*/
+		}
+
+        #overlay1 {
+            /*
+            left:80%;
+            width:20%;*/
+            width:30%;
+            /*background-color:yellow;*/
+            margin-top:10%;
+        }
+
+        #overlay2 {
+            /*
+            left:80%;
+            width:20%;*/
+            margin-left:30%;
+            width:30%;
+            /*background-color:yellow;*/
+        }
+
+        #overlay4 {
+            margin-left:24%;
+            width:40%;
+            max-height:500px;
+            /*background-color: rgba(0, 0, 0, 0.2);*/
+        }
+
+		.step:last-child {
+			margin-bottom: 0;
+		}
+
+		.step.is-active p {
+			background-color: goldenrod;
+			color: #3b3b3b;
+		}
+
+        .step img{
+            margin-top:0%;
+        }
+
+		.step p {
+			text-align: center;
+			padding: 1rem;
+			font-size: 1.5rem;
+			background-color: #3b3b3b;
+		}
+
+		#scrolly_stickyside {
+			position: relative;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			/*background-color: #f3f3f3;*/
+			padding: 1rem;
+		}
+
+		#scrolly_stickyside>* {
+			-webkit-box-flex: 1;
+			-ms-flex: 1;
+			flex: 1;
+		}
+
+		article_side {
+			position: relative;
+			padding: 0 1rem;
+			padding-right:0.25rem;
+			max-width: 35rem;
+			min-height:400px;
+			margin-left:100px;
+		}
+
+		figure_side {
+			position: -webkit-sticky;
+			position: sticky;
+			width: 100%;
+			margin: 0;
+			-webkit-transform: translate3d(0, 0, 0);
+			-moz-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+			/*background-color: #8a8a8a;*/
+			z-index: 0;
+		}
+
+		figure_side p {
+			text-align: center;
+			padding: 1rem;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-moz-transform: translate(-50%, -50%);
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			font-size: 8rem;
+			font-weight: 900;
+			color: #fff;
+		}
+
+        figure_side img {
+            text-align: center;
+			padding: 1rem;
+			-moz-transform: translate(-50%, -50%);
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			position: absolute;
+            justify-content: center;
+			top: 50%;
+			left: 50%;
+			width:80%;
+            height:100%;
+            
+        }
+
+		.step1 {
+			margin: 0 auto 2rem auto;
+			background-color: #f3f3f3;
+			color:#3b3b3b;
+		}
+
+		.step1:last-child {
+			margin-bottom: 0;
+		}
+
+		.step1.is-active {
+			/*background-color: goldenrod;*/
+			color: #3b3b3b;
+		}
+
+		.step1 p {
+			text-align: center;
+			padding: 4rem;
+			padding-left:6rem;
+			padding-right:6rem;
+			font-size: 20px;
+			line-height:35px;
+		}
+	</style>
+</head>
+
+<body>
+	
+	<main>
+	
+		<section id="intro">
+			<div class="section header">
+				<h1> Figure Skating: A Data Breakdown</h1>
+			</div>
+			<div class = "section byline">
+				<p> By Meghana Kakubal</p>
+			</div>
+			<div class="section content">
+				<p>There’s an interesting trend in figure skating. Both the singles men and women divisions are scored using the same point system—as in the same moves are worth the same points for both men and women. Yet the average total score for male figure skaters is always around 80 points higher. 
+					</p>
+				<p>For example, in the 2022 Winter Olympics, the average score for the top three male figure skaters was 311.83: 
+					</p>
+				<img class="avg" src = "Visuals/Asset 1.svg">
+				<p>The average score for the top three female figure skaters was 246.94.</p>
+				<img class="avg" src = "Visuals/Asset 2.svg">
+				<p> That’s a 64.89 point difference! So, why the gap?</p>
+				<p>It comes down to the jumps. The fan favorite maneuvers are a staple of the sport, and no easy feat. They consistently make up the majority of an athlete's score.
+					The way figure skating scoring works, even poorly executed jumps with greater rotations can earn more points than perfectly performed ones of fewer rotations.
+					So athletes are always attempting the difficult and high-scoring triple and quadruple jumps.  </p>
+				<p> That means different things for male and female skaters.</p>
+			</div>
+		</section>
+
+
+		<section id="scrolly">
+			<figure>
+				<img id="testing_figure_change" src="Visuals/Asset 3.svg">
+			</figure>
+
+			<article>
+				<div id ="overlay1" class="step" data-step="1">
+                    <img src = "Visuals/Asset 5.svg">
+				</div>
+				<div id ="overlay2" class="step" data-step="2">
+					<img src = "Visuals/Asset 8.svg">
+				</div>
+				<div id = "overlay2" class="step" data-step="3">
+					<img src = "Visuals/Asset 9.svg">
+				</div>
+				<div id = "overlay4"class="step" data-step="4">
+					<img src = "Visuals/Asset 14.svg">
+				</div>
+			</article>
+		</section>
+
+        <section id="intro">
+			<div class="section content_two">
+				<p>In fact, the top three men (Chen, Kagiyama, and Uno) attempted a total of 34 quad jumps during the 2022 Olympic comptetition,
+                    and the top three women (Scherbakova, Trusova, and Sakamoto) performed a combined 7. Expanding on this discrepancy, since 2003, 
+                    there have been more than 100 male figure skaters to attempt a quadruple jump in a major international competitions. In contrast, 
+                    there have been only 9 female skaters to do the same. 
+                </p>
+				<p>Does this mean that men are just better figure skaters? No, not exactly. It's a function of the physical differences
+					between the sexes. In an <a href="https://www.scientificamerican.com/article/how-olympic-figure-skaters-break-records-with-physics/#">
+						interview with the Scientific American</a>, exercise science and athletic training
+					professor Deborah King explained that, "Generally, you’re seeing just the differences in muscle mass between male and 
+					female skaters...if you look at the bell curves of strength and power... Most of the male skaters are jumping a little 
+					higher than the female ones, and most of them are likely going to be able to generate more rotational momentum coming off the ice."
+				</p>
+				<p>With less muscle mass, many female skaters rely on a low bodyweight in order to achieve more height, and consequently
+					more rotations, in a jump. King said in the interview, "In terms of women, you see lot of skaters hitting their jumps 
+					before puberty. It can be particularly hard for female skaters when they go through puberty because changes in your 
+					body size and shape make you have to relearn your jumps." 
+				</p>
+				<p> This idea is evidenced in the average age of skaters to perform quads in major international competitions. The top 50 male skaters
+					to perform a quad have an average age of X, while the seven female skaters have an average age of 17 years. The urge to earn more points
+					and win medals often means pushing one's body very hard at a very young age. 
+				</p>	
+					
+			</div>
+		</section>
+		<section id="scrolly_stickyside">
+			<article_side>
+				<div class="step1" data-step="1">
+					<p>As of right now, the minimum age to compete at the international senior level in women's figure skating is 15 years old.
+						However, the International Skating Union is looking to change that. At their meeting next month, the organization will vote
+						on a proposal to rage the age minimum requirement to 17 years old by the 2024-25 season.  
+					</p>
+				</div>
+				<div class="step1" data-step="2">
+					<p>The <a href = "https://www.nytimes.com/2022/05/02/sports/olympics/figure-skating-age.html">New York Times reported</a> on a statement from the Norwegian Skating Federation that was included in the proposal, articulating
+						that "Between 1994 and 2018, five Olympic gold medalists in women’s skating were between the ages of 15 and 17; all of them retired
+						 either just before or right after the world championships the following season."
+					</p>
+				</div>
+				<div class="step1" data-step="3">
+					<p>The hope is that with the increased age minimum, atheletes will avoid physical harms in their youth and also develop a 
+						sustainable, longer-lasting career in the sport. The ISU detailed that in a survey conducted by the ISU Athletes Commission,
+						"82.6% of all respondents supported raising the age limits." The proposal is likely to pass, and many believe this is a positive
+						turning point for the sport.
+					</p>
+				</div>
+			</article_side>
+
+			<figure_side>
+				<p>0</p>
+                <img id="testing_figure_change1" src="Visuals/Asset 20-100.jpg">
+			</figure_side>
+		</section>
+		<section id="outro"></section>
+	</main>
+
+	<!-- <div class='debug'></div> -->
+	<script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
+	<script src="../scrollama.min.js"></script>
+	<script>
+        const testing_figures = ["Visuals/Asset 3.svg", "Visuals/Asset 11.svg", "Visuals/Asset 12.svg", "Visuals/Asset 12.svg", "Visuals/Asset 12.svg"];
+		// using d3 for convenience
+		var main = d3.select("main");
+		var scrolly = main.select("#scrolly");
+		var figure = scrolly.select("figure");
+		var article = scrolly.select("article");
+		var step = article.selectAll(".step");
+
+		// initialize the scrollama
+		var scroller = scrollama();
+
+		// generic window resize listener event
+		function handleResize() {
+			// 1. update height of step elements
+			var stepH = Math.floor(window.innerHeight * 0.75);
+			step.style("height", stepH + "px");
+
+			var figureHeight = window.innerHeight / 2;
+			var figureMarginTop = (window.innerHeight - figureHeight) / 2;
+
+			figure
+				.style("height", figureHeight + "px")
+				.style("top", figureMarginTop + "px");
+
+			// 3. tell scrollama to update new element dimensions
+			scroller.resize();
+		}
+
+		// scrollama event handlers
+		function handleStepEnter(response) {
+			console.log(response);
+			// response = { element, direction, index }
+
+			// add color to current step only
+			step.classed("is-active", function (d, i) {
+				return i === response.index;
+			});
+
+			// update graphic based on step
+            document.getElementById("testing_figure_change").src=testing_figures[response.index +1];
+			/*figure.select("p").text(response.index + 1);*/
+		}
+
+		function setupStickyfill() {
+			d3.selectAll(".sticky").each(function () {
+				Stickyfill.add(this);
+			});
+		}
+
+		function init() {
+			setupStickyfill();
+
+			// 1. force a resize on load to ensure proper dimensions are sent to scrollama
+			handleResize();
+
+			// 2. setup the scroller passing options
+			// 		this will also initialize trigger observations
+			// 3. bind scrollama event handlers (this can be chained like below)
+			scroller
+				.setup({
+					step: "#scrolly article .step",
+					offset: 0.33,
+					debug: false
+				})
+				.onStepEnter(handleStepEnter);
+		}
+
+		// kick things off
+		init();
+	</script>
+	<script>
+		const testing_figures1 = ["kamila1.jpg","kamila1.jpg", "kaori2.jpeg","scherbakova3.jpg"];
+
+		// using d3 for convenience
+		var main = d3.select("main");
+		var scrolly = main.select("#scrolly_stickyside");
+		var figure = scrolly.select("figure_side");
+		var article = scrolly.select("article_side");
+		var step = article.selectAll(".step");
+
+		// initialize the scrollama
+		var scroller = scrollama();
+
+		// generic window resize listener event
+		function handleResize() {
+			// 1. update height of step elements
+			var stepH = Math.floor(window.innerHeight * 0.75);
+			step.style("height", stepH + "px");
+
+			var figureHeight = window.innerHeight / 2;
+			var figureMarginTop = (window.innerHeight - figureHeight) / 2;
+
+			figure
+				.style("height", figureHeight + "px")
+				.style("top", figureMarginTop + "px");
+
+			// 3. tell scrollama to update new element dimensions
+			scroller.resize();
+		}
+
+		// scrollama event handlers
+		function handleStepEnter(response1) {
+			console.log(response1);
+			// response = { element, direction, index }
+
+			// add color to current step only
+			step.classed("is-active", function (d, i) {
+				return i === response1.index;
+			});
+
+			// update graphic based on step
+			//document.getElementById("testing_figure_change1").src=testing_figures1[response1.index +1];
+			//figure.select("img").src= testing_figures[response.index + 1];
+		}
+
+		function setupStickyfill() {
+			d3.selectAll(".sticky").each(function () {
+				Stickyfill.add(this);
+			});
+		}
+
+		function init() {
+			setupStickyfill();
+
+			// 1. force a resize on load to ensure proper dimensions are sent to scrollama
+			handleResize();
+
+			// 2. setup the scroller passing options
+			// 		this will also initialize trigger observations
+			// 3. bind scrollama event handlers (this can be chained like below)
+			scroller
+				.setup({
+					step: "#scrolly article .step",
+					offset: 0.33,
+					debug: false
+				})
+				.onStepEnter(handleStepEnter);
+		}
+
+		// kick things off
+		init();
+			</script>
+</body>
+
+</html>
